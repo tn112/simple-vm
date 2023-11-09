@@ -25,10 +25,6 @@ const int program[] = {
     JMPT, 1,
 };
 
-int fetch() {
-    return program[ip];
-}
-
 int eval(int instruction) {
     switch (instruction) {
         case HALT : {
@@ -83,7 +79,7 @@ int eval(int instruction) {
 
 int main() {
     while (running) {
-        eval(fetch());
+        eval(program[ip]);
         ip++;
     }
 
