@@ -11,6 +11,7 @@
 3. (ADD) Removes the top two values from the stack, and pushes their sum onto the stack.
 4. (MUL) Removes the top two values from the stack, and pushes their product onto the stack.
 5. (OUT) Prints the top item of the stack to standard output.
-6. (HALT) Completely terminates the VM.
-7. (JMP x) Jumps to a chosen instruction in the program, instructions are indexed from 1.
-8. (JMPT x) Jumps to a chosen instruction in the program if the top item of the stack is equal to 1(true).
+6. (COUT) Prints the top item of the stack to standard output, as a char.
+7. (HALT) Completely terminates the VM.
+8. (JMP x) Jumps to a chosen instruction in the program, instructions are indexed from 1.
+9. (JMPT x) Jumps to a chosen instruction in the program if the top item of the stack is equal to 1(true).
