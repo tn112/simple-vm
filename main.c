@@ -13,6 +13,7 @@ typedef enum {
     ADD,
     MUL,
     OUT,
+    COUT,
     HALT,
     JMP,
     JMPT,
@@ -20,9 +21,9 @@ typedef enum {
 
 // program goes here 
 const int program[] = {
-    PUSH, 1, 
-    OUT,
-    JMPT, 1,
+    PUSH, 33,
+    COUT,
+    HALT
 };
 
 int eval(int instruction) {
@@ -42,6 +43,10 @@ int eval(int instruction) {
         }
         case OUT : {
             printf("%d\n", stack[sp]); 
+            break;
+        }
+        case COUT : {
+            printf("%d", stack[sp]);
             break;
         }
         case ADD : {
